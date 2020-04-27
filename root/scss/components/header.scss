@@ -1,0 +1,56 @@
+.main-header {
+    //background: silver;
+    
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    height: $height-header-responsive;
+    width: 100%;
+    max-width: $max-width;
+    padding: .5rem 1rem;
+    position: fixed;
+    z-index: var(--z-fixed);
+    top: 0;
+    background: white;
+    border-bottom: 1px solid rgb(204, 199, 199);
+
+    @include media(xlarge) {
+    height: $height;
+    grid-template-columns: max-content 1fr;
+    padding: 0 1rem;
+    }
+ }
+
+    
+
+
+.element-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.menu-toogle {
+  
+    width: 1.5rem;
+    height: 1rem;
+    background: linear-gradient($color-toogle 15%, transparent 15%, transparent 40%,
+                                $color-toogle 40%, $color-toogle 55%, transparent 55%, transparent 85%,
+                                $color-toogle 85%, $color-toogle 100%);
+ 
+    cursor: pointer; 
+    margin: auto;
+
+    @include media(xlarge) {
+    display: none;
+    }
+    }
+
+
+    @include media(xlarge) {
+    .icon-search {
+     display: none;
+    }    
+    }
+ 

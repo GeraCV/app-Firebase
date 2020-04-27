@@ -1,0 +1,103 @@
+.main-nav {
+  position: fixed;
+  background: rgb(235, 233, 233);
+  width: 70%;
+  border-left: 1px solid rgb(202, 198, 198);
+  height: calc(100vh - #{$height-header-responsive});
+  z-index: var(--z-fixed) ;
+  transition: right .6s;
+  bottom: 0;
+  right: -80vw;
+
+  @include media(xlarge) {
+    position: static;
+    width: 100%;
+    height: $height;
+    transition: none;
+    z-index: var(--z-normal);
+    border: none;
+    border-bottom: 1opx solid black;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-bottom: 1px solid rgb(204, 199, 199);
+  }
+
+}
+
+.show {
+  right: 0;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+
+.svg-icon-search {
+  width: 1.3rem;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+.menu {
+  margin: .5rem 1.5rem;
+  padding: 0;
+
+  @include media(xlarge) {
+    margin: auto;
+    display: flex;
+  
+
+  }
+
+}
+
+.menu-item {
+  padding: 1rem;
+  border-bottom: 1px solid rgb(202, 198, 198) ;
+
+  @include media(xlarge) {
+    padding: .8rem;
+    border-bottom: none;
+  }
+}
+
+.link-item {
+  font-weight: lighter;
+
+  @include media(xlarge) {
+    color: rgb(102, 102, 102);
+
+    &:hover {
+    font-weight: bold;
+    color: black;
+    
+  }
+ }
+}
+
+
+
+
+
+.input-bar-search {
+    position: fixed;
+    height: $height-header-responsive;
+    top: -($height-header-responsive);
+    left: 0;
+    width: $max-width;
+    padding: 1rem;
+    z-index: var(--z-modal);
+    border-style: none;
+    transition: top .4s;
+}
+
+.show-bar {
+  top: 0;
+}

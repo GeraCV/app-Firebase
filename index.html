@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="root/css/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="icon-search element-header" id="icon-search">
+      <svg viewBox="0 0 26 26" class="svg-icon-search" id="svg-icon-search-flex" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M16.3347 17.7381C14.6099 19.1517 12.404 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 12.3985 19.1556 14.5998 17.7478 16.3228L25.6796 24.2546C26.0702 24.6451 26.0702 25.2783 25.6796 25.6688C25.2891 26.0593 24.6559 26.0593 24.2654 25.6688L16.3347 17.7381ZM18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10Z">
+        </path>
+      </svg>
+    </div>
+    <div class="container-title element-header">
+      <h1 class="title"> TechNews</h1>
+    </div>
+    <div class="menu-toogle element-header" id="menu-toogle"></div>
+
+
+    <nav class="main-nav" id="main-nav">
+      <ul class="menu">
+        <li class="menu-item"><a href="#" class="link-item"> ¿Quieres redactar para nosotros? </a> </li>
+        <li class="menu-item"><a href="#" class="link-item"> Articulos mas leídos </a> </li>
+        <li class="menu-item"><a href="#" class="link-item"> Te preparamos tu propia ruta </a> </li>
+        <li class="menu-item"><a href="#" class="link-item"> Nuestra Misión </a></li>
+        <li class="menu-item"><a href="#" class="link-item"> Acerca de nosotros </a></li>
+        <li class="menu-item"><a href="#" class="link-item"> Quienes somos </a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <input type="text" class="input-bar-search" id="input-bar-search" placeholder="¿Qué noticia estás buscando?">
+
+  <main>
+
+    <!-- FEATURES -->
+
+    <div class="container-features">
+      <div class="feature">
+        <a class="text-feature" id="text-register" href="#"> Subscribete </a>
+      </div>
+      <div class="feature">
+        <a class="text-feature" id="text-login" href="#"> Iniciar Sesión </a>
+      </div>
+    </div>
+
+    <div class="container-cards">
+      <article class="card">
+        <div class="card__img">
+          <a href="#"> <img class="img" src="root/img/tech/programacion.jpeg" alt="Programación"> </a>
+        </div>
+        <div class="card__content">
+          <h2 class="card__text"> Programación </h2>
+          <div class="card__btns">
+            <a href="#" class=" btn-normal"> Todas las noticias </a>
+            <a href="#" class=" btn-normal"> Mas destacadas </a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img">
+          <a href="#"> <img class="img" src="root/img/tech/diseño.jpeg" alt="Diseño"> </a>
+        </div>
+        <div class="card__content">
+          <h2 class="card__text"> Diseño UI/UX </h2>
+          <div class="card__btns">
+            <a href="#" class=" btn-normal"> Todas las noticias </a>
+            <a href="#" class=" btn-normal"> Mas destacadas </a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img">
+          <a href="#"> <img class="img" src="root/img/tech/emprendimiento.jpeg" alt="Emprendimiento"> </a>
+        </div>
+        <div class="card__content">
+          <h2 class="card__text"> Emprendimiento </h2>
+          <div class="card__btns">
+            <a href="#" class=" btn-normal"> Todas las noticias </a>
+            <a href="#" class=" btn-normal"> Mas destacadas </a>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__img">
+          <a href="#"> <img class="img" src="root/img/tech/marketing.jpeg" alt="Marketing"> </a>
+        </div>
+        <div class="card__content">
+          <h2 class="card__text"> Marketing </h2>
+          <div class="card__btns">
+            <a href="#" class=" btn-normal"> Todas las noticias </a>
+            <a href="#" class=" btn-normal"> Mas destacadas </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- TOOLTIP PARA REGISTRO-->
+
+  <div class="container-register" id="container-register">
+    <h3 class="title-register"> Registrarme </h3>
+    <h3 class="subtitle-register"> Registarme con </h3>
+    <div class="container-sociales grid grid-tc-3 gg1">
+      <a href="#" class="text-login sm"> Google </a>
+      <a href="#" class="text-login sm"> Facebook </a>
+      <a href="#" class="text-login sm"> Twitter </a>
+    </div>
+    <form class="register grid grid-tc-6" id="formulario-register">
+      <div class="grid-c-6">
+        <input class="inpt" type="text" name="name" placeholder="Ingresa tu nombre" required />
+      </div>
+      <div class="grid-c-6">
+        <input class="inpt" type="text" name="lastname" placeholder="Ingresa tus apellidos" required />
+      </div>
+      <div class="grid-c-6">
+        <input class="inpt" type="email" name="email" placeholder="Ingresa tu correo electrónico" required />
+      </div>
+      <div class="grid-c-6">
+        <input class="inpt" type="password" name="password" placeholder="Ingresa tu contraseña" required />
+      </div>
+      <div class="grid-c-6">
+        <input class="inpt" type="password" name="spassword" placeholder="Repite tu contraseña" required />
+      </div>
+      <div class="grid-c-6">
+        <input class="btn-submit inpt" id="btn-submit" type="submit" value="Registrarse">
+      </div>
+    </form>
+  </div>
+
+
+  <!-- TOOLTIP PARA LOGIN-->
+
+  <div class="container-login" id="container-login">
+    <h3 class="title-login"> Iniciar sesión </h3>
+    <h3 class="subtitle-login"> Iniciar sesión con </h3>
+    <div class="container-sociales grid grid-tc-3 gg1">
+      <a href="#" class="text-login sm"> Google </a>
+      <a href="#" class="text-login sm"> Facebook </a>
+      <a href="#" class="text-login sm"> Twitter </a>
+    </div>
+    <form class="login grid grid-tc-6" id="formulario-login">
+      <div class="grid-c-6">
+        <input class="inpt" type="email" name="email" placeholder="Ingresa tu correo electrónico">
+      </div>
+      <div class="grid-c-6">
+        <input class="inpt" type="password" name="password" placeholder="Ingresa tu contraseña">
+      </div>
+      <div class="grid-c-6">
+        <input class="btn-submit inpt" type="submit" value="Registrarse">
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p class="text-footer"> Derechos Reservados </p>
+    <p class="text-footer"> Politicas de provacidad </p>
+    <h3 class="title-footer"> TechNews </h3>
+  </footer>
+
+  <script src="root/js/script.js"></script>
+  <script src="root/js/register.js"></script>
+  <script src="root/js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+body {
+    margin-top: $height-header-responsive;
+
+    @include media(xlarge) {
+        margin-top: $height; 
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+.gg1 {
+    grid-gap: 1rem;
+}
+
+.gg2 {
+    grid-gap: 2rem;
+}
+
+.gg3 {
+    grid-gap: 3rem;
+}

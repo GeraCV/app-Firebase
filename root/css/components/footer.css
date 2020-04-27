@@ -1,0 +1,16 @@
+.footer {
+  background: #d4d4d4;
+  height: 10rem; }
+
+.text-footer, .title-footer {
+  margin-bottom: 0;
+  text-align: center;
+  padding: .8rem 0;
+  font-weight: bold; }
+
+.text-footer {
+  color: #5f5d5d; }
+
+.title-footer {
+  color: #363636;
+  font-size: var(--h2-font-size); }

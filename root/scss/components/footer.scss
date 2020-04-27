@@ -1,0 +1,22 @@
+.footer {
+  background: rgb(212, 212, 212);
+  height: 10rem;
+}
+
+.text-footer, .title-footer {
+  margin-bottom: 0;
+  text-align: center;
+  padding: .8rem 0;
+  font-weight: bold;
+  
+  
+}
+
+.text-footer {
+  color: rgb(95, 93, 93);
+}
+
+.title-footer {
+  color: rgb(54, 54, 54);
+  font-size: var(--h2-font-size);
+}

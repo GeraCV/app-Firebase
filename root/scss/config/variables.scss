@@ -1,0 +1,46 @@
+$max-width: 100%;
+$height-header-responsive: 3rem;
+$height: 4.5rem;
+$color-toogle: rgb(99, 97, 97);
+
+
+$breakpoints: (
+  small: 360px,
+  medium: 640px,
+  large: 960px,
+  xlarge: 1024px
+);
+
+/* Posicionamiento de los componentes */
+
+:root {
+  --z-back     : -10 ;
+  --z-normal   : 1 ;
+  --z-tooltip  : 10 ;
+  --z-fixed    : 100 ;
+  --z-modal    : 1000 ;
+}
+
+/* Tamaños de fuente */
+:root {
+  --h1-font-size        : 24px;
+  --h2-font-size        : 20px;
+  --h3-font-size        : 16px;
+  --normal-font-size    : 16px;
+  --small-font-size     : 13px;
+  --smaller-font-size   : 12px;
+  --heading-line-height : 1.3;
+  --body-line-height    : 1.6;
+  
+    // Font sizes from lg breakpoint (64em ~ 1024px)
+    @media screen and (min-width: 960px) {
+    --h1-font-size      : 36px;
+    --h2-font-size      : 24px;
+    --h3-font-size      : 20px;
+    --normal-font-size  : 16px;
+    --small-font-size   : 14px;
+    --smaller-font-size : 13px;
+}
+}
+
+
